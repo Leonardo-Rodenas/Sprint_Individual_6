@@ -55,7 +55,9 @@ De esta manera, se muestra a través del sitio noticias en un "carrusel Bootstra
 
 - **Vista de los últimos servicios contratados:** Contenido dinámico, permite Visualización de los últimos servicios registrados sin necesidad de utilizar el panel de control provisto por Django admin.
 
+
 ![Animation_Browser10](https://i.imgur.com/IZquEBA.gif)
+
 
 - **Formulario de contacto dinámico:** Fomulario de contacto que permite dejar un mensaje en la base de datos, para realizar el posterior contacto con el usuario y solucionar las dudas planteadas. Los campos del formulario pasan por verificaciones internas que determinan el largo mínimo y máximo de los mensajes y la obligatoriedad de llenar todos los campos solicitados. En la imagen inferior, en un inicio se llena el mensaje con la palabra "hola", pero el formulario no es válido e indica que el mensaje mínimo debe contener 50 caracteres, tras solucionar esto y escribir un mensaje más largo el formulario es válido y es enviado, avisando de esto en un cuadro inferior de color verde.
 
