@@ -70,7 +70,7 @@ De esta manera, se muestra a través del sitio noticias en un "carrusel Bootstra
 ---
 ### Grupos de permisos de Usuario:
 
-Los grupos estan pensado de menor cantidad de permisos (más restringido el uso del sitio) a mayor cantidad (menos restricciones, posee más control del sitio). Ninguno de ellos, a excepción del "superuser" puede entrar al sitio de administración de Django a no ser que el "superuser" les confiera el tipo de usuario Staff o SuperUser.
+Los grupos estan pensado de menor cantidad de permisos (más restringido el uso del sitio) a mayor cantidad (menos restricciones, posee más control del sitio). Ninguno de ellos, a excepción del "superuser" puede entrar al sitio de administración de Django a no ser que el "superuser" les confiera el tipo de usuario Staff o SuperUser (**Advertencia: Reconociendo lo inseguro de la acción y también que el proyecto es para aprender y no algo para desplegar en desarrollo, deja acá el usuario y contraseña del SuperAdmin para así explorar la aplicación y ver los permisos en en el panel de administración, usuario: rodenas y contraseña: rodenas_123_rodenas**).
 
 ![1](https://i.imgur.com/PTNmUfJ.png)
 
