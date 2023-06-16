@@ -1,0 +1,134 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block titulo %}
+
+Yo quiero Otro Mundo - Servicios
+
+{% endblock %}
+
+{% block contenido %}
+
+{% include "tablas/tabla_servicios.html" %}
+
+
+{% block servicios %}
+
+<!-- Inicio Servicios -->
+<div class="container-fluid">
+    <div class="container pb-3">
+        <div class="text-center mb-3 pb-3">
+            <h1 class="text-success fw-bold textoEnDestacado pb-4">NUESTROS SERVICIOS</h1>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="package-item bg-white mb-2 hoverZoom">
+                        <img class="img-fluid" src="{% static 'img/cursos/CAPCITACION2.jpg' %}" alt="charla">
+                        <div class="p-2">
+                            <a class="h5 text-decoration-none" href="">Charla Agricultura orgánica y Biodinámica</a>
+                            <div class="border-top mt-2 text-center">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4 horas</h6>
+                                    <h5 class="m-0">$120.000</h5>
+                                </div>
+                                <button class="btn btn-outline-success me-3">+ Info</button>
+                                <button class="btn btn-outline-success">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="package-item bg-white mb-2 hoverZoom">
+                        <img class="img-fluid" src="{% static 'img/cursos/reciclaje.png' %}" alt="curso reciclaje">
+                        <div class="p-2">
+                            <a class="h5 text-decoration-none" href="">Curso de Reciclaje para niños, niñas y
+                                adolescentes</a>
+                            <div class="border-top mt-2 text-center">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>2 horas</h6>
+                                    <h5 class="m-0">$80.000</h5>
+                                </div>
+                                <button class="btn btn-outline-success me-3">+ Info</button>
+                                <button class="btn btn-outline-success">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="package-item bg-white mb-2 hoverZoom">
+                        <img class="img-fluid" src="{% static 'img/cursos/control_biologico.jpg' %}" alt="control biologico">
+                        <div class="p-2">
+                            <a class="h5 text-decoration-none" href="">Tipos de Control Biológico de insectos
+                                plagas, implementación y mantención</a>
+                            <div class="border-top mt-2 text-center">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4 sesiones (2 hr
+                                        c/u)</h6>
+                                    <h5 class="m-0">$250.000</h5>
+                                </div>
+                                <button class="btn btn-outline-success me-3">+ Info</button>
+                                <button class="btn btn-outline-success">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="package-item bg-white mb-2 hoverZoom">
+                        <img class="img-fluid" src="{% static 'img/cursos/huerto_urbano.jpg' %}" alt="huerto urbano">
+                        <div class="p-2">
+                            <a class="h5 text-decoration-none" href="">Taller: Huertos Urbanos, creación,
+                                mantención, recomendaciones y cultivos</a>
+                            <div class="border-top mt-2 text-center">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>6 sesiones (2 hr
+                                        c/u)</h6>
+                                    <h5 class="m-0">$70.000</h5>
+                                </div>
+                                <button class="btn btn-outline-success me-3">+ Info</button>
+                                <button class="btn btn-outline-success">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="package-item bg-white mb-2 hoverZoom">
+                        <img class="img-fluid" src="{% static 'img/cursos/biofertilizantes.jpg' %}" alt="biofertilizantes">
+                        <div class="p-2">
+                            <a class="h5 text-decoration-none" href="">Fabricación y uso de plaguicidas orgánicos y
+                                biofertilizantes caseros</a>
+                            <div class="border-top mt-2 text-center">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>Agendar
+                                        disponibilidad</h6>
+                                    <h5 class="m-0">Gratis</h5>
+                                </div>
+                                <button class="btn btn-outline-success me-3">+ Info</button>
+                                <button class="btn btn-outline-success">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="package-item bg-white mb-2 hoverZoom">
+                        <img class="img-fluid" src="{% static 'img/cursos/asesoria.jpg' %}" alt="asesoria">
+                        <div class="p-2">
+                            <a class="h5 text-decoration-none" href="">Asesoría en terreno, plan de riego y control de plagas/enfermedades</a>
+                            <div class="border-top mt-2 text-center">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>(3 hr al mes)</h6>
+                                    <h5 class="m-0">125.000</h5>
+                                </div>
+                                <button class="btn btn-outline-success me-3">+ Info</button>
+                                <button class="btn btn-outline-success">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Fin Servicios -->
+
+{% endblock%}
+
+{% endblock %}

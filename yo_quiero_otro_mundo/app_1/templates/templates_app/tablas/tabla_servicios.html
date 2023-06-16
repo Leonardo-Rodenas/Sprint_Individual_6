@@ -1,0 +1,30 @@
+{% load static %}
+
+<div class="card rounded-right-5 border-3 border-success m-5">
+    <img class="align-self-center" src="{% static 'img/logo.png' %}" alt="logo_tabla" style="width: 80px; height: auto; margin-top: 80px;">
+    <h3 class="text-center fw-bold my-4">Últimos servicios contratados:</h3>
+    <div class="px-5 table-responsive">
+        <table class="table table-striped-columns">
+            <thead>
+                <tr >
+                    <th class="bg-success text-center text-white" scope="col">Servicio</th>
+                    <th class="bg-success text-center text-white" scope="col">Cliente</th>
+                    <th class="bg-success text-center text-white" scope="col">Email</th> 
+                    <th class="bg-success text-center text-white" scope="col">Teléfono</th>
+                    <th class="bg-success text-center text-white" cope="col">Dirección</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for servicios in servicios %}
+                <tr>
+                    <th class="text-center">{{ servicios.servicio }}</th>
+                    <td class="text-center">{{ servicios.nombre }} {{ servicios.apellido }}</td>
+                    <td class="text-center">{{ servicios.correo }}</td>
+                    <td class="text-center">{{ servicios.telefono }}</td>
+                    <td class="text-center">{{ servicios.telefono }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>     
+</div>

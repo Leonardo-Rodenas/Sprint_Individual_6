@@ -1,0 +1,118 @@
+{% extends "base.html"%}
+{% load static %}
+
+{% block titulo %}
+
+Yo quiero Otro Mundo - Nosotros
+
+{% endblock %}
+
+{% block contenido %}
+
+{% block Acerca_de_nosotros%}
+{% load static %}
+<!-- Inicio Acerca de nosotros -->
+<div class="container-fluid py-5 ">
+    <div class="container pt-5 ">
+        <div class="row">
+            <div class="col-sm-6 col-lg-6" style="min-height: 400px;">
+                <div class="about-text bg-white p-5 p-lg-5 my-lg-5">
+                    <h6 class="text-success text-uppercase"
+                        style="letter-spacing: 5px; font-family: 'Courier New', Courier, monospace; font-weight: bolder;">
+                        Sobre Nosotros</h6>
+                    <h1 class="mb-3">Yo quiero Otro Mundo</h1>
+                    <p>Yo quiero otro Mundo es una iniciativa entregada a reparar la dañada tierra cultivable que nos
+                        rodea y tanto enseñar como
+                        guiar hacia un cambio en la relación hombre-naturaleza. Buscamos rescatar las técnicas de
+                        agricultura de antaño,
+                        repletas de valores; donde se combina el poder natural de la gente con lo nuevo que nos ofrece
+                        la tecnología;
+                        sin perder la sensibilidad hacia la búsqueda de lo fraterno y la autodeterminación para decidir
+                        la producción
+                        de los cultivos básicos para sobrevivir con dignidad.
+                    </p>
+                    <p>
+                        Es un presente que rompe con el paradigma donde nos quieren hacer creer que solo sirve la
+                        gigante agroindustria,
+                        donde todo depende de una secuencia tecnológicamente impositiva y depredadora.
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-6 pt-5 pb-lg-5">
+                <div class="position-relative h-100">
+                    <img src="{% static 'img/organica.jpg' %}" class="position-absolute w-100 h-100"
+                        style="object-fit: cover;" alt="nosotros_img1">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid fondo_destacado mb-5">
+    <div class="container-fluid pb-3">
+        <div class="container my-3">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2 class="text-white text-center me-3 ">Misión</h2>
+                    <div class="d-flex ">
+                        <div class="d-flex flex-column mt-2 bg-white rounded-4">
+                            <p class="text-dark text-center fs-5 p-3">Enseñar y promover la agricultura orgánica como
+                                fuente principal de vida digna
+                                y prosperidad social para el campo.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h2 class="text-white text-center me-3 ">Visión</h2>
+                    <div class="d-flex ">
+                        <div class="d-flex flex-column mt-2 bg-white rounded-4">
+                            <p class="text-dark text-center fs-5 p-3">Transformar la forma de producción de alimentos,
+                                de la
+                                mano de una agricultura orgánica justa, asequible y solidaria.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h2 class="text-white text-center me-3 ">Valores</h2>
+                    <div class="d-flex ">
+                        <div class="d-flex flex-column mt-2 bg-white rounded-4">
+                            <ul class="fs-5 p-3">
+                                <li class="ms-2">Compromiso y Transparencia</li>
+                                <li class="ms-2">Solidaridad</li>
+                                <li class="ms-2">Respeto por la vida y el medio ambiente</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid py-5 ">
+    <div class="container pt-5 ">
+        <div class="row">
+            <div class="col-sm-6 col-lg-6" style="min-height: 400px;">
+                <div class="position-relative h-100">
+                    <img src="{% static 'img/organica2.jpg' %}" class="position-absolute w-100 h-100"
+                        style="object-fit: cover;">
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-6 pt-5 pb-lg-5">
+                <div class="about-text bg-white p-5 p-lg-5 my-lg-5">
+                    <h6 class="text-success text-uppercase"
+                        style="letter-spacing: 5px; font-family: 'Courier New', Courier, monospace; font-weight: bolder;">
+                       Historia</h6>
+                    <h1 class="mb-3">El inicio de nuestro camino</h1>
+                    <p>Comenzamos nuestra cruzada ecológica el año 2008, tras salir de la U, con sueños de grandez y la perzonalidad y empuje suficiente para cumplir nuestras metas. Asi bien
+                        el inicio fue lento y dificil, nuesto primer proyecto a manos del Centro Ceres en Quillota, nos impulso a saber y crecer en el área, atrayendo clientes y poniendo
+                        nuestro granito de arena en la V regíon. El día de hoy, ya estamso en todo Chile y esperamos seguir creciendo hasta la luna XD.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock%}
+
+{% endblock%}

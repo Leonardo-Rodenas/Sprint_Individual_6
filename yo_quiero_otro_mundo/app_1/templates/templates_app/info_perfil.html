@@ -1,0 +1,70 @@
+{% extends "base.html"%}
+{% load static %}
+
+{% block titulo %}
+
+Yo quiero Otro Mundo - Info Perfil
+
+{% endblock %}
+
+{% block contenido %}
+
+<section class="h-100 gradient-form">
+    <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-xl-10">
+                <div class="card rounded-0 text-black" id="gradiente_verde">
+                    <div class="row g-0">
+                        <div class="col-lg-6">
+                            <div class="container ms-5 my-5">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <h2 class="fw-bold mx-3">Arma tú grupo de trabajo</h2>
+                                        <form method="post" enctype="multipart/form-data">
+                                            {% csrf_token %}
+                                            <table class="my-3">
+                                                {% for field in form %}
+                                                    <tr>
+                                                        <td>{{ field.label_tag }}</td>
+                                                        <td>
+                                                            {{ field }}
+                                                            {% if field.errors %}
+                                                            <span class="text-danger">{{ field.errors }}</span>
+                                                            {% endif %}
+                                                        </td>
+                                                    </tr>
+                                                {% endfor %}
+                                            </table>
+                                            <button type="submit" class="btn btn-success">Armar Grupo</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 d-flex align-items-center" id="gradiente_verde">
+                            <div class="card" style="margin-left: 20%; margin-right: 10%;">
+                                <div class="card-header bg-success text-white">
+                                    <h3>Tú Grupo de Proyecto</h3>
+                                </div>
+                                <div class="card-body">
+                                    <div>
+                                        {% for usuario in usuarios %}
+                                        {% load static %}
+                                        <li>
+                                            <!-- <img src=" {% static 'img/TLV_logo.png' %}" class="rounded-circle" alt="img_perfil" width="50" height="50"> -->
+                                            {{ usuario.nombre }} {{ usuario.apellido }} | {{ usuario.correo }} |
+                                            {{usuario.telefono }}
+                                        </li>
+                                        {% endfor %}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

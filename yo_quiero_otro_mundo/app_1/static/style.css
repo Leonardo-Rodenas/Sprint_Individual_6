@@ -1,0 +1,98 @@
+hr {
+    border: none; 
+    background-color: white; 
+    height: 5px; 
+  }
+
+.tipoLetra {
+    font-family: "Bagel Fat One";
+    color: rgb(48, 214, 48);
+}
+
+.bg-brown {
+    background-color: #7e4821;
+    /* Código de color café */
+}
+
+#gradiente_verde {
+    background: rgb(54, 91, 12);
+    background: linear-gradient(0deg, rgba(54, 91, 12, 1) 5%, rgba(124, 199, 36, 1) 47%, rgba(54, 91, 11, 1) 95%);
+}
+
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Fondo con opacidad */
+    padding: 10px;
+    color: white;
+}
+
+.boton_carrusel {
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Fondo con opacidad */
+}
+
+@media (max-width: 576px) {
+    .font-size-sm {
+        font-size: 14px;
+    }
+}
+
+.img_fondo {
+    background-image: url("../static/img/fondo.jpg");
+}
+
+.fondo_destacado {
+    background: rgb(112,172,58);
+    background: radial-gradient(circle, rgba(112,172,58,1) 0%, rgba(72,119,31,1) 70%); 
+}
+
+.textoEnDestacado {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.hoverZoom:hover {
+    transform: scale(1.1);
+}
+
+/* Estilo de carrusel imagenes testimonio */
+
+.cards-wrapper {
+    display: flex;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-tarjetas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+    /* Ajusta el ancho máximo del carrusel según tus necesidades */
+    margin: 0 auto;
+    /* Centra el carrusel horizontalmente */
+    overflow: hidden;
+    /* Oculta el contenido que se desborda */
+}
+
+.card-pair {
+    display: flex;
+    justify-content: center;
+}
+
+.card-carrusel {
+    width: calc(100%/2);
+    width: 900px;
+    height: 150px;
+    margin: 10px;
+}

@@ -1,0 +1,187 @@
+{% extends "base.html" %}
+
+{% block titulo %} 
+
+Yo quiero Otro Mundo - Home
+
+{% endblock %}
+
+{% block contenido %}
+
+{% block carrusel %}
+{% load static %}
+<!-- Inicio Carrusel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+    <!-- Puntos indicadores bajo el carrusel -->
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+    </div>
+    <!--Transición de las imágenes -->
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img class="w-100" src="{% static 'img/carrusel/carrusel1.jpg' %}" alt="carrusel1"
+                style="max-width: 100%; height: 500px;">
+            <div class="carousel-caption">
+                <h5>Huertos Comunitarios</h5>
+                <h3>Cultiva de forma sana tus propios alimentos</h3>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img class="w-100" src="{% static 'img/carrusel/carrusel2.jpg' %}" alt="carrusel2"
+                style="max-width: 100%; height: 500px;">
+            <div class="carousel-caption">
+                <h5>Reciclaje</h5>
+                <h3>Aprende a reciclar con nosotos</h3>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img class="w-100" src="{% static 'img/carrusel/carrusel3.jpg' %}" alt="carrusel3"
+                style="max-width: 100%; height: 500px;">
+            <div class="carousel-caption">
+                <h5>Control Biológico</h5>
+                <h3>Controla de Manera amigable las molestas plagas</h3>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img class="w-100" src="{% static 'img/carrusel/carrusel4.jpg' %}" alt="carrusel4"
+                style="max-width: 100%; height: 500px;">
+            <div class="carousel-caption">
+                <h5>Cursos de Agroecología</h5>
+                <h3>Agricultura de la mano con el planeta <svg xmlns="http://www.w3.org/2000/svg" width="30"
+                        height="30" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                    </svg></h3>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img class="w-100" src="{% static 'img/carrusel/carrusel5.jpg' %}" alt="carrusel5"
+                style="max-width: 100%; height: 500px;">
+            <div class="carousel-caption">
+                <h5>Plaguicidas Naturales</h5>
+                <h3>Uso y producción de plaguicidas naturales</h3>
+            </div>
+        </div>
+        <!-- controles previo - siguiente -->
+        <a class="carousel-control-prev boton_carrusel" href="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon boton_carrusel m-2"></span>
+        </a>
+        <a class="carousel-control-next boton_carrusel" href="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon boton_carrusel m-2"></span>
+        </a>
+    </div>
+</div>
+<!-- Fin Carrusel -->
+
+{% endblock %}
+
+{% block Acerca_de_nosotros%}
+{% load static %}
+<!-- Inicio Acerca de nosotros -->
+<div class="container-fluid py-5 ">
+    <div class="container pt-5 ">
+        <div class="row">
+            <div class="col-sm-6 col-lg-6" style="min-height: 400px;">
+                <div class="position-relative h-100">
+                    <img src="{% static 'img/profesional.jpg' %}" class="position-absolute w-100 h-100"
+                        style="object-fit: cover;">
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-6 pt-5 pb-lg-5">
+                <div class="about-text bg-white p-5 p-lg-5 my-lg-5">
+                    <h6 class="text-success text-uppercase"
+                        style="letter-spacing: 5px; font-family: 'Courier New', Courier, monospace; font-weight: bolder;">
+                        Sobre Nosotros</h6>
+                    <h1 class="mb-3">Yo quiero Otro Mundo</h1>
+                    <p>En "Yo quiero otro mundo", trabajamos para poder conectarnos con las comunidades locales e
+                        instruirlos en el cuidado del medio
+                        ambiente, mediante la concientización de uso de productos agro ecológicos, manejo y control
+                        de plagas de forma biológica y la enseñanza.
+                        Destacamos en la guía y creación de huertos comunitarios e implementación de planes de
+                        reciclaje para su comuna.
+                    </p>
+                    <div class="text-center">
+                        <a href="{% url 'sobre_nosotros' %}" class="btn btn-outline-success mt-1 text-center">+ Sobre nosotros</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Fin Acerca de nosotros -->
+
+{% endblock%}
+
+{% block destacado%}
+
+<!-- Inicio Destacados -->
+<div id="destacados" class="container-fluid fondo_destacado">
+    <h2 class="text-center text-white textoEnDestacado pt-4"><b>DESTACAMOS EN...</b></h2>
+    <hr>
+    <div class="container-fluid pb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="d-flex ">
+                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center me-4 mt-4"
+                            style="height: 100px; width: 100px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="white"
+                                class="bi bi-bug" viewBox="0 0 16 16">
+                                <path
+                                    d="M4.355.522a.5.5 0 0 1 .623.333l.291.956A4.979 4.979 0 0 1 8 1c1.007 0 1.946.298 2.731.811l.29-.956a.5.5 0 1 1 .957.29l-.41 1.352A4.985 4.985 0 0 1 13 6h.5a.5.5 0 0 0 .5-.5V5a.5.5 0 0 1 1 0v.5A1.5 1.5 0 0 1 13.5 7H13v1h1.5a.5.5 0 0 1 0 1H13v1h.5a1.5 1.5 0 0 1 1.5 1.5v.5a.5.5 0 1 1-1 0v-.5a.5.5 0 0 0-.5-.5H13a5 5 0 0 1-10 0h-.5a.5.5 0 0 0-.5.5v.5a.5.5 0 1 1-1 0v-.5A1.5 1.5 0 0 1 2.5 10H3V9H1.5a.5.5 0 0 1 0-1H3V7h-.5A1.5 1.5 0 0 1 1 5.5V5a.5.5 0 0 1 1 0v.5a.5.5 0 0 0 .5.5H3c0-1.364.547-2.601 1.432-3.503l-.41-1.352a.5.5 0 0 1 .333-.623zM4 7v4a4 4 0 0 0 3.5 3.97V7H4zm4.5 0v7.97A4 4 0 0 0 12 11V7H8.5zM12 6a3.989 3.989 0 0 0-1.334-2.982A3.983 3.983 0 0 0 8 2a3.983 3.983 0 0 0-2.667 1.018A3.989 3.989 0 0 0 4 6h8z" />
+                            </svg>
+                        </div>
+                        <div class="d-flex flex-column mt-4">
+                            <h5 class="text-white fw-bold textoEnDestacado">Control Biológico</h5>
+                            <p class="text-white">Expertos en control de plagas mediante el uso de biocontroladores.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="d-flex ">
+                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center me-4 mt-4"
+                            style="height: 100px; width: 100px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="white"
+                                class="bi bi-globe-americas" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0ZM2.04 4.326c.325 1.329 2.532 2.54 3.717 3.19.48.263.793.434.743.484-.08.08-.162.158-.242.234-.416.396-.787.749-.758 1.266.035.634.618.824 1.214 1.017.577.188 1.168.38 1.286.983.082.417-.075.988-.22 1.52-.215.782-.406 1.48.22 1.48 1.5-.5 3.798-3.186 4-5 .138-1.243-2-2-3.5-2.5-.478-.16-.755.081-.99.284-.172.15-.322.279-.51.216-.445-.148-2.5-2-1.5-2.5.78-.39.952-.171 1.227.182.078.099.163.208.273.318.609.304.662-.132.723-.633.039-.322.081-.671.277-.867.434-.434 1.265-.791 2.028-1.12.712-.306 1.365-.587 1.579-.88A7 7 0 1 1 2.04 4.327Z" />
+                            </svg>
+                        </div>
+                        <div class="d-flex flex-column mt-4">
+                            <h5 class="text-white fw-bold textoEnDestacado">Capacitaciones</h5>
+                            <p class="text-white">Impartir conocimientos tanto a agricultores como a juntas
+                                vecinales.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="d-flex ">
+                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center me-4 mt-4"
+                            style="height: 100px; width: 100px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="white"
+                                class="bi bi-recycle" viewBox="0 0 16 16">
+                                <path
+                                    d="M9.302 1.256a1.5 1.5 0 0 0-2.604 0l-1.704 2.98a.5.5 0 0 0 .869.497l1.703-2.981a.5.5 0 0 1 .868 0l2.54 4.444-1.256-.337a.5.5 0 1 0-.26.966l2.415.647a.5.5 0 0 0 .613-.353l.647-2.415a.5.5 0 1 0-.966-.259l-.333 1.242-2.532-4.431zM2.973 7.773l-1.255.337a.5.5 0 1 1-.26-.966l2.416-.647a.5.5 0 0 1 .612.353l.647 2.415a.5.5 0 0 1-.966.259l-.333-1.242-2.545 4.454a.5.5 0 0 0 .434.748H5a.5.5 0 0 1 0 1H1.723A1.5 1.5 0 0 1 .421 12.24l2.552-4.467zm10.89 1.463a.5.5 0 1 0-.868.496l1.716 3.004a.5.5 0 0 1-.434.748h-5.57l.647-.646a.5.5 0 1 0-.708-.707l-1.5 1.5a.498.498 0 0 0 0 .707l1.5 1.5a.5.5 0 1 0 .708-.707l-.647-.647h5.57a1.5 1.5 0 0 0 1.302-2.244l-1.716-3.004z" />
+                            </svg>
+                        </div>
+                        <div class="d-flex flex-column mt-4">
+                            <h5 class="text-white fw-bold textoEnDestacado">Reciclaje</h5>
+                            <p class="text-white">Implementación de planes de reciclaje a nivel comunal y vecinal.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Fin Destacados -->
+
+{% endblock%}
+
+{% endblock %}
