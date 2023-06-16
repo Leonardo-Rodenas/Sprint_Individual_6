@@ -3,6 +3,7 @@
 # Sprint Individual - Módulo 6
 ### Leonardo Rodenas Escobar
 
+Ojo: Recordar variables de entorno en .env-initial (a settings.py)
 </center>
 
 ---
